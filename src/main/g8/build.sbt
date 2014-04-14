@@ -4,6 +4,13 @@ version := "0.1.0"
 
 scalaVersion := "2.10.3"
 
-autoCompilerPlugins := true
+resolvers ++= Seq(
+  "IESL Release" at "https://dev-iesl.cs.umass.edu/nexus/content/groups/public",
+  "Wolfe Release" at "http://homeniscient.cs.ucl.ac.uk:8081/nexus/content/repositories/releases",
+  Resolver.sonatypeRepo("snapshots"),
+  Resolver.sonatypeRepo("releases")
+)
 
-addCompilerPlugin("default" %% "scalapplcodefest" % "0.1.0")
+libraryDependencies ++= Seq(
+  "ml.wolfe" %% "wolfe" % "0.1.0"
+)
