@@ -16,3 +16,8 @@ libraryDependencies ++= Seq(
   "ml.wolfe" %% "wolfe-core" % "0.1.0-SNAPSHOT",
   "ml.wolfe" %% "wolfe-examples" % "0.1.0-SNAPSHOT"
 )
+
+initialCommands := """
+        import ml.wolfe.Wolfe._
+        import ml.wolfe.macros.OptimizedOperators._
+"""
