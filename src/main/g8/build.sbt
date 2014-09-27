@@ -13,8 +13,8 @@ resolvers ++= Seq(
 )
 
 libraryDependencies ++= Seq(
-  "ml.wolfe" %% "wolfe-core" % "0.2.0",
-  "ml.wolfe" %% "wolfe-examples" % "0.2.0"
+  "ml.wolfe" %% "wolfe-core" % "0.3.0",
+  "ml.wolfe" %% "wolfe-examples" % "0.3.0"
 )
 
 initialCommands := """
