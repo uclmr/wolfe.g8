@@ -2,7 +2,7 @@ name := "$name$"
 
 version := "0.1.0"
 
-scalaVersion := "2.10.3"
+scalaVersion := "2.11.7"
 
 resolvers ++= Seq(
   "IESL Release" at "https://dev-iesl.cs.umass.edu/nexus/content/groups/public",
@@ -13,8 +13,8 @@ resolvers ++= Seq(
 )
 
 libraryDependencies ++= Seq(
-  "ml.wolfe" %% "wolfe-core" % "0.3.0",
-  "ml.wolfe" %% "wolfe-examples" % "0.3.0"
+  "ml.wolfe" %% "wolfe-core" % "0.5.0",
+  "ml.wolfe" %% "wolfe-examples" % "0.5.0"
 )
 
 initialCommands := """
