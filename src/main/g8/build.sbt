@@ -12,6 +12,8 @@ resolvers ++= Seq(
   Resolver.sonatypeRepo("releases")
 )
 
+addCompilerPlugin("org.scalamacros" % "paradise" % "2.1.0-M5" cross CrossVersion.full)
+
 libraryDependencies ++= Seq(
   "ml.wolfe" %% "wolfe-core" % "0.5.0",
   "ml.wolfe" %% "wolfe-examples" % "0.5.0"
